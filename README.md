@@ -3,13 +3,15 @@ Documentação de referência para o bot Hyper Tickets, para gerenciar tickets n
 
 `Vídeo de demonstração usando o BOT:` https://www.youtube.com/watch?v=iF2a5R0Oir4
 
+## Comandos
+
 ##### `/activate` - Ativa o servidor com a key.
 
 O comando deve ser usado com uma key **válida**, para que o BOT fique disponível para uso. Esse comando deve ser usado apenas **UMA VEZ POR MÊS**. Usar várias keys de forma seguida não vai aumentar o tempo de funcionamento do BOT, você deve reativar todo mês.
 
 ##### `/expires` - Mostra a data de expiração da última key usada.
 
-Esse comando não requer nenhum parâmetro. Para mais informações, olhe a seção **Keys.**
+Esse comando não requer nenhum parâmetro. Para mais informações, olhe a seção [Keys.](#keys)
 
 ##### `/addcargo` - Dá acesso ao ticket para membros do cargo.
 
