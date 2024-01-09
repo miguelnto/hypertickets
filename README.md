@@ -63,17 +63,21 @@ Detalhe muito importante sobre o comando **/configticket**:
 Ao usar esse comando, aparecerá um menu intuitivo, onde você poderá personalizar o seu painel de ticket. A cada mudança feita, você deve pressionar o botão "Atualizar configurações" para que elas sejam atualizadas. **Além disso, existem algumas observações para o menu:**
   - Você não pode adicionar emojis padrões nas opções, apenas emojis únicos do seu servidor. Podem ser emojis animados.
   - Para adicionar quebras de linha, use o "\n". Por exemplo, digamos que você queira escrever:
+  - 
     ```
     Por favor,
 
     Aperte no botão abaixo para abrir um ticket
     ```
+    
     Você deve escrever da seguinte forma na descrição: "Por favor,\n\nAperte no botão abaixo para abrir um ticket". Note que aqui usamos duas quebras de linha:
+
     ```
     Por favor, <- uma quebra de linha
     <- outra quebra de linha
     Aperte no botão abaixo para abrir um ticket
     ```
+    
   - Uma imagem anexada ao ticket é opcional.
 
 
