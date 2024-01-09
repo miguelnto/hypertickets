@@ -136,9 +136,7 @@ Envia um embed no canal escolhido.
 ---
 
 ##### ⚙️ /ticket
-Envia um menu padrão com a funcionalidade de ticket.
-
-Envia um painel de ticket que já vem padronizado sem necessidade de configuração.
+Envia um painel de ticket que já vem padronizado sem necessidade de configuração. O painel é enviado no canal em que o comando foi usado.
 
 ---
 
