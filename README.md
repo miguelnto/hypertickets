@@ -69,11 +69,11 @@ Ao usar esse comando, aparecerá um menu intuitivo, onde você poderá personali
     Aperte no botão abaixo para abrir um ticket
     ```
   - Você deve escrever da seguinte forma na descrição: "Por favor,\n\nAperte no botão abaixo para abrir um ticket". Note que aqui usamos duas quebras de linha:
-   ```
-   Por favor, <- uma quebra de linha
-   <- outra quebra de linha
-   Aperte no botão abaixo para abrir um ticket
-   ```
+    ```
+    Por favor, <- uma quebra de linha
+    <- outra quebra de linha
+    Aperte no botão abaixo para abrir um ticket
+    ```
   - Uma imagem anexada ao ticket é opcional.
 
 
