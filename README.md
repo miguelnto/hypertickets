@@ -3,10 +3,10 @@
 
 As principais funcionalides incluem:
 
-- 💻 Painel para costumizar e enviar ticket.
-- 🏴 Dar acesso ao ticket para cargos específicos.
-- 📁 Acesso ao conteúdo inteiro do canal do ticket com arquivo de texto.
-- 🏷️ Ticket padrão sem necessidade de configuração.
+- 💻 - *Painel para costumizar e enviar ticket.*
+- 🏴 - *Dar acesso ao ticket para cargos específicos.*
+- 📁 - *Acesso ao conteúdo inteiro do canal do ticket com arquivo de texto.*
+- 🏷️ - *Ticket padrão sem necessidade de configuração.*
 
 ## Configuração inicial e como usar
 
