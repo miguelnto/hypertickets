@@ -1,23 +1,64 @@
 # Hyper Tickets
-Documentação de referência para o bot Hyper Tickets, para gerenciar tickets no seu servidor.
+**Documentação de referência para o bot Hyper Tickets, desenvolvido para facilitar o gerenciamento de tickets no seu servidor.**
 
-`Vídeo de demonstração usando o BOT:` https://www.youtube.com/watch?v=iF2a5R0Oir4
+As principais funcionalides incluem:
 
-## Comandos
+- 💻 Painel para costumizar e enviar ticket.
+- 🏴 Dar acesso ao ticket para cargos específicos.
+- 📁 Acesso ao conteúdo inteiro do canal do ticket com arquivo de texto.
+- 🏷️ Ticket padrão sem necessidade de configuração.
 
-##### `/activate` - Ativa o servidor com a key.
+## Configuração inicial e como usar
 
-O comando deve ser usado com uma key **válida**, para que o BOT fique disponível para uso. Esse comando deve ser usado apenas **UMA VEZ POR MÊS**. Usar várias keys de forma seguida não vai aumentar o tempo de funcionamento do BOT, você deve reativar todo mês.
+Requisitos:
 
-##### `/expires` - Mostra a data de expiração da última key usada.
+- Uma *key* para ativar o bot.
+- O link de convite para o bot.
 
-Esse comando não requer nenhum parâmetro. Para mais informações, olhe a seção [Keys.](#keys)
+Se você tem todos esses requisitos, por favor siga os seguintes passos **na ordem:**
 
-##### `/addcargo` - Dá acesso ao ticket para membros do cargo.
+- Convide o BOT para seu servidor usano o link de convite.
+- Use o comando `/activate` com a key. Se você digitou corretamente, o bot alertará que a key foi ativada com sucesso.
+- Por favor leia mais informações sobre a key [abaixo](#keys).
+- Use o comando `/expires` para checar quando sua key vai expirar. Esse comando pode ser usado no futuro quantas vezes você quiser.
+- O BOT já está configurado e pode ser usado. Confira todos os comandos disponíveis na seção [comandos](#comandos).
 
-O comando deve ser usado passando um cargo. Todos os membros que possuirem esse cargo vão ter acesso ao canal do ticket.
+## Keys
 
-##### `/configticket` - Abre uma tela para configurar um painel de ticket personalizado.
+Keys são usadas para a ativação da aplicação. Confira a seguir informações essenciais sobre as keys:
+
+- Você deve usar apenas uma key e **uma vez** por mês. Se você tem 2 ou mais keys, aguarde até 1 ou 2 dias antes da data de expiração da key para usar uma nova. Se você usar uma key e em seguida usar outra, isso não extenderá o prazo de expiração.
+- Uma key funciona só uma vez. Se você tentar usar uma key usada, você vai receber uma mensagem de erro.
+- O horário da expiração da key é de acordo com o horário de brasília. Se sua key expira em `22/12/2031`, e são `00:01` do dia `22/12/2031` no horário de brasília, sua key já expirou.
+- Nenhum comando ou interação com o bot será possível se o seu servidor não estiver ativado com a key.
+
+### Comandos com as keys
+
+---
+
+#### ⚙️ /activate - `key` 
+Ativa o bot com uma key.
+
+- `key` - A key que deve ser usada o bot seja ativado.
+
+Exemplo:
+
+`/activate [7Z8V-LIFO-2W5T]`
+
+---
+
+#### ⚙️ /expires 
+Checa a data de expiração da key.
+
+Esse comando não tem parâmetros.
+
+---
+
+## Observações
+
+🚩 **ATENÇÃO!**
+
+Detalhe muito importante sobre o comando **/configticket**:
 
 Ao usar esse comando, aparecerá um menu intuitivo, onde você poderá personalizar o seu painel de ticket. A cada mudança feita, você deve pressionar o botão "Atualizar configurações" para que elas sejam atualizadas. **Além disso, existem algumas observações para o menu:**
   - Você não pode adicionar emojis padrões nas opções, apenas emojis únicos do seu servidor. Podem ser emojis animados.
@@ -35,26 +76,67 @@ Ao usar esse comando, aparecerá um menu intuitivo, onde você poderá personali
    ```
   - Uma imagem anexada ao ticket é opcional.
 
-##### `/fecharticket` - Envia um arquivo transcrito com todas as mensagens do ticket e deleta o canal.
+
+🚩 **ATENÇÃO!**
+
+Nesta documentação, os comandos são referenciados da seguinte forma:
+
+#### ⚙️ **/comando** - `parâmetro_1`, `parâmetro_2`, ...
+Descrição do comando.
+
+- `parâmetro_1` - Significado do parâmetro...
+- `parâmetro_2` - Significado do outro parâmetro...
+
+Exemplo:
+
+Um exemplo de como usar o comando.
+
+`/comando parametro_1 parametro_2`
+
+
+## Comandos
+
+---
+
+##### ⚙️ /addcargo - `cargo`
+Dá acesso ao ticket para membros do cargo especificado. Esse comando deve ser usado dentro do canal do ticket desejado.
+
+- `cargo` - O cargo para qual esse comando deve ser aplicado. Um mini menu de seleção será aberto com os cargos disponíveis.
+
+---
+
+##### ⚙️ /configticket - `canal`
+Abre uma tela para configurar seu painel de ticket personalizado.
+
+- `canal` - O canal onde o painel de ticket será enviado. Uma pequena lista de canais irá aparecer e você deverá selecionar o canal.
+
+---
+
+##### ⚙️ /fecharticket
+Envia um arquivo transcrito com todas as mensagens do ticket e deleta o canal.
 
 Esse comando deve ser utilizado quando você pretende "fechar" o ticket. Ao usá-lo, todas as mensagens enviadas no canal do ticket serão reenviadas no seu privado dentro de arquivo .txt, e o canal do ticket será deletado.
 
-##### `/sendembed` - Envia um embed no canal escolhido.
+---
 
-Esse comando tem 6 paramêtros para serem passados: O título do Embed, a descrição, o canal onde será enviado, o emoji (opcional), o link que será contido no botão do Embed, e o título do botão (intitulado msgbotao).
+##### ⚙️ /sendembed - `titulo`, `descricao`, `canal`, `emoji`, `link`, `msgbotao`
+Envia um embed no canal escolhido.
 
-##### `/ticket` - Envia um menu padrão com a funcionalidade de ticket.
+- `titulo` - O título do Embed.
+- `descricao` - A descrição do Embed.
+- `canal` - O canal onde o Embed será enviado. Uma pequena lista de canais irá aparecer e você deverá selecionar o canal.
+- `emoji` - O nome do emoji a ser mostrado no botão do Embed. Deve ser um emoji único do server, não pode ser um emoji padrão.
+- `link` - O link que será aberto ao pressionar o botão do Embed.
+- `msgbotao` - A mensagem a ser mostrada no botão do Embed. 
 
-Envia um menu que já vem padronizado com um ticket sem necessidade de configuração.
+---
 
-## Keys
+##### ⚙️ /ticket
+Envia um menu padrão com a funcionalidade de ticket.
 
-Keys são usadas para a ativação da aplicação. Confira a seguir informaçãoes essenciais sobre as keys:
+Envia um painel de ticket que já vem padronizado sem necessidade de configuração.
 
-- Você deve usar apenas uma key e **uma vez** por mês. Se você tem 2 ou mais keys, aguarde até 1 ou 2 dias antes da data de expiração da key para usar uma nova. Se você usar uma key e em seguida usar outra, isso não extenderá o prazo de expiração.
-- Uma key funciona só uma vez. Se você tentar usar uma key usada, você vai receber uma mensagem de erro.
-- O horário da expiração da key é de acordo com o horário de brasília. Se sua key expira em `22/12/2031`, e são `00:01` do dia `22/12/2031` no horário de brasília, sua key já expirou.
-- Nenhum comando ou interação com o bot será possível se o seu servidor não estiver ativado com a key.
+---
 
 ## Contato
 
