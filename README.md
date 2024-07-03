@@ -1,4 +1,7 @@
 # Hyper Tickets
+
+![HyperTickets](hyperticketss.png)
+
 **Documentação de referência para o bot Hyper Tickets, desenvolvido para facilitar o gerenciamento de tickets no seu servidor.**
 
 As principais funcionalides incluem:
